@@ -3,19 +3,43 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2D33E31849034AB0BEC5371B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EB7D6351189435FB4B340C4 /* awsconfiguration.json */; };
+		4116C0D5E03D66986E7A0A11 /* Pods_AWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409D6021669EF8A1BE6F3D7 /* Pods_AWS.framework */; };
+		52FFD9002C8042648144A0F7 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 8713FEFE8A42463FB36F3DA0 /* amplifyconfiguration.json */; };
 		E24201702633C5E70050258A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242016F2633C5E70050258A /* AppDelegate.swift */; };
 		E24201722633C5E70050258A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24201712633C5E70050258A /* SceneDelegate.swift */; };
 		E24201742633C5E70050258A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24201732633C5E70050258A /* ViewController.swift */; };
 		E24201772633C5E70050258A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E24201752633C5E70050258A /* Main.storyboard */; };
 		E24201792633C5E90050258A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E24201782633C5E90050258A /* Assets.xcassets */; };
 		E242017C2633C5E90050258A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E242017A2633C5E90050258A /* LaunchScreen.storyboard */; };
+		E242024026370C690050258A /* UserListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242023C263703C90050258A /* UserListView.swift */; };
+		E282325A265412EF00B4D385 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282324E265412EF00B4D385 /* Location.swift */; };
+		E282325B265412EF00B4D385 /* Gender.swift in Sources */ = {isa = PBXBuildFile; fileRef = E282324F265412EF00B4D385 /* Gender.swift */; };
+		E282325C265412EF00B4D385 /* AmplifyModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823250265412EF00B4D385 /* AmplifyModels.swift */; };
+		E282325D265412EF00B4D385 /* UserCommunity+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823251265412EF00B4D385 /* UserCommunity+Schema.swift */; };
+		E282325E265412EF00B4D385 /* User+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823252265412EF00B4D385 /* User+Schema.swift */; };
+		E282325F265412EF00B4D385 /* Pet+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823253265412EF00B4D385 /* Pet+Schema.swift */; };
+		E2823260265412EF00B4D385 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823254265412EF00B4D385 /* User.swift */; };
+		E2823261265412EF00B4D385 /* Location+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823255265412EF00B4D385 /* Location+Schema.swift */; };
+		E2823262265412EF00B4D385 /* Community+Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823256265412EF00B4D385 /* Community+Schema.swift */; };
+		E2823263265412EF00B4D385 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823257265412EF00B4D385 /* Community.swift */; };
+		E2823264265412EF00B4D385 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823258265412EF00B4D385 /* Pet.swift */; };
+		E2823265265412EF00B4D385 /* UserCommunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823259265412EF00B4D385 /* UserCommunity.swift */; };
+		E2F9936D263712AF00E37EB2 /* UserListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9936C263712AF00E37EB2 /* UserListEventHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		29230110180E720DDE82E9A5 /* Pods-AWS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS.release.xcconfig"; path = "Target Support Files/Pods-AWS/Pods-AWS.release.xcconfig"; sourceTree = "<group>"; };
+		434F2D1B9E1B214B360B34FD /* Pods-AWS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AWS.debug.xcconfig"; path = "Target Support Files/Pods-AWS/Pods-AWS.debug.xcconfig"; sourceTree = "<group>"; };
+		4B2FE4D77F094B6EA527B2DC /* schema.graphql */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text; name = schema.graphql; path = amplify/backend/api/amplifyDatasource/schema.graphql; sourceTree = "<group>"; };
+		5409D6021669EF8A1BE6F3D7 /* Pods_AWS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AWS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		54ABB23D2D1E41C2B7BCDF4A /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
+		8713FEFE8A42463FB36F3DA0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
+		9EB7D6351189435FB4B340C4 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
 		E242016C2633C5E70050258A /* AWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E242016F2633C5E70050258A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24201712633C5E70050258A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +48,20 @@
 		E24201782633C5E90050258A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E242017B2633C5E90050258A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E242017D2633C5E90050258A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E242023C263703C90050258A /* UserListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListView.swift; sourceTree = "<group>"; };
+		E282324E265412EF00B4D385 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		E282324F265412EF00B4D385 /* Gender.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Gender.swift; sourceTree = "<group>"; };
+		E2823250265412EF00B4D385 /* AmplifyModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AmplifyModels.swift; sourceTree = "<group>"; };
+		E2823251265412EF00B4D385 /* UserCommunity+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UserCommunity+Schema.swift"; sourceTree = "<group>"; };
+		E2823252265412EF00B4D385 /* User+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+Schema.swift"; sourceTree = "<group>"; };
+		E2823253265412EF00B4D385 /* Pet+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Pet+Schema.swift"; sourceTree = "<group>"; };
+		E2823254265412EF00B4D385 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		E2823255265412EF00B4D385 /* Location+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Location+Schema.swift"; sourceTree = "<group>"; };
+		E2823256265412EF00B4D385 /* Community+Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Community+Schema.swift"; sourceTree = "<group>"; };
+		E2823257265412EF00B4D385 /* Community.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
+		E2823258265412EF00B4D385 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		E2823259265412EF00B4D385 /* UserCommunity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCommunity.swift; sourceTree = "<group>"; };
+		E2F9936C263712AF00E37EB2 /* UserListEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListEventHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +69,50 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4116C0D5E03D66986E7A0A11 /* Pods_AWS.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33A442E057FACF2B2237943F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5409D6021669EF8A1BE6F3D7 /* Pods_AWS.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8710CEC6B40140AF9CE0DCC8 /* AmplifyConfig */ = {
+			isa = PBXGroup;
+			children = (
+				54ABB23D2D1E41C2B7BCDF4A /* amplifytools.xcconfig */,
+				8713FEFE8A42463FB36F3DA0 /* amplifyconfiguration.json */,
+				9EB7D6351189435FB4B340C4 /* awsconfiguration.json */,
+				4B2FE4D77F094B6EA527B2DC /* schema.graphql */,
+			);
+			name = AmplifyConfig;
+			path = .;
+			sourceTree = "<group>";
+		};
+		B3D5D7ACE64B1A83B2EA31E5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				434F2D1B9E1B214B360B34FD /* Pods-AWS.debug.xcconfig */,
+				29230110180E720DDE82E9A5 /* Pods-AWS.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		E24201632633C5E70050258A = {
 			isa = PBXGroup;
 			children = (
+				8710CEC6B40140AF9CE0DCC8 /* AmplifyConfig */,
 				E242016E2633C5E70050258A /* AWS */,
 				E242016D2633C5E70050258A /* Products */,
+				B3D5D7ACE64B1A83B2EA31E5 /* Pods */,
+				33A442E057FACF2B2237943F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +127,45 @@
 		E242016E2633C5E70050258A /* AWS */ = {
 			isa = PBXGroup;
 			children = (
+				E282324D265412EF00B4D385 /* AWSAPI */,
 				E242016F2633C5E70050258A /* AppDelegate.swift */,
 				E24201712633C5E70050258A /* SceneDelegate.swift */,
 				E24201732633C5E70050258A /* ViewController.swift */,
+				E242023A2637036D0050258A /* Viper */,
 				E24201752633C5E70050258A /* Main.storyboard */,
 				E24201782633C5E90050258A /* Assets.xcassets */,
 				E242017A2633C5E90050258A /* LaunchScreen.storyboard */,
 				E242017D2633C5E90050258A /* Info.plist */,
 			);
 			path = AWS;
+			sourceTree = "<group>";
+		};
+		E242023A2637036D0050258A /* Viper */ = {
+			isa = PBXGroup;
+			children = (
+				E242023C263703C90050258A /* UserListView.swift */,
+				E2F9936C263712AF00E37EB2 /* UserListEventHandler.swift */,
+			);
+			path = Viper;
+			sourceTree = "<group>";
+		};
+		E282324D265412EF00B4D385 /* AWSAPI */ = {
+			isa = PBXGroup;
+			children = (
+				E282324E265412EF00B4D385 /* Location.swift */,
+				E282324F265412EF00B4D385 /* Gender.swift */,
+				E2823250265412EF00B4D385 /* AmplifyModels.swift */,
+				E2823251265412EF00B4D385 /* UserCommunity+Schema.swift */,
+				E2823252265412EF00B4D385 /* User+Schema.swift */,
+				E2823253265412EF00B4D385 /* Pet+Schema.swift */,
+				E2823254265412EF00B4D385 /* User.swift */,
+				E2823255265412EF00B4D385 /* Location+Schema.swift */,
+				E2823256265412EF00B4D385 /* Community+Schema.swift */,
+				E2823257265412EF00B4D385 /* Community.swift */,
+				E2823258265412EF00B4D385 /* Pet.swift */,
+				E2823259265412EF00B4D385 /* UserCommunity.swift */,
+			);
+			path = AWSAPI;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +175,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = E24201802633C5E90050258A /* Build configuration list for PBXNativeTarget "AWS" */;
 			buildPhases = (
+				D399B71313864FA59DD2138B /* [CP] Check Pods Manifest.lock */,
 				E24201682633C5E70050258A /* Sources */,
 				E24201692633C5E70050258A /* Frameworks */,
 				E242016A2633C5E70050258A /* Resources */,
+				30029FD0B3CFA80D1FD0258F /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,19 +230,77 @@
 				E242017C2633C5E90050258A /* LaunchScreen.storyboard in Resources */,
 				E24201792633C5E90050258A /* Assets.xcassets in Resources */,
 				E24201772633C5E70050258A /* Main.storyboard in Resources */,
+				52FFD9002C8042648144A0F7 /* amplifyconfiguration.json in Resources */,
+				2D33E31849034AB0BEC5371B /* awsconfiguration.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		30029FD0B3CFA80D1FD0258F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWS/Pods-AWS-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AWS/Pods-AWS-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AWS/Pods-AWS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D399B71313864FA59DD2138B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AWS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		E24201682633C5E70050258A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E2823263265412EF00B4D385 /* Community.swift in Sources */,
 				E24201742633C5E70050258A /* ViewController.swift in Sources */,
 				E24201702633C5E70050258A /* AppDelegate.swift in Sources */,
+				E282325D265412EF00B4D385 /* UserCommunity+Schema.swift in Sources */,
+				E242024026370C690050258A /* UserListView.swift in Sources */,
+				E2823261265412EF00B4D385 /* Location+Schema.swift in Sources */,
 				E24201722633C5E70050258A /* SceneDelegate.swift in Sources */,
+				E282325E265412EF00B4D385 /* User+Schema.swift in Sources */,
+				E282325C265412EF00B4D385 /* AmplifyModels.swift in Sources */,
+				E2823262265412EF00B4D385 /* Community+Schema.swift in Sources */,
+				E282325A265412EF00B4D385 /* Location.swift in Sources */,
+				E2823265265412EF00B4D385 /* UserCommunity.swift in Sources */,
+				E2823260265412EF00B4D385 /* User.swift in Sources */,
+				E2F9936D263712AF00E37EB2 /* UserListEventHandler.swift in Sources */,
+				E2823264265412EF00B4D385 /* Pet.swift in Sources */,
+				E282325B265412EF00B4D385 /* Gender.swift in Sources */,
+				E282325F265412EF00B4D385 /* Pet+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,12 +444,14 @@
 		};
 		E24201812633C5E90050258A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 434F2D1B9E1B214B360B34FD /* Pods-AWS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YAL9X38J8;
 				INFOPLIST_FILE = AWS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,18 +459,20 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.AWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		E24201822633C5E90050258A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 29230110180E720DDE82E9A5 /* Pods-AWS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9YAL9X38J8;
 				INFOPLIST_FILE = AWS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +480,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.lyle.AWS;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
