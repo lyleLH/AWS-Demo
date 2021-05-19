@@ -10,6 +10,12 @@
 		2D33E31849034AB0BEC5371B /* awsconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 9EB7D6351189435FB4B340C4 /* awsconfiguration.json */; };
 		4116C0D5E03D66986E7A0A11 /* Pods_AWS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5409D6021669EF8A1BE6F3D7 /* Pods_AWS.framework */; };
 		52FFD9002C8042648144A0F7 /* amplifyconfiguration.json in Resources */ = {isa = PBXBuildFile; fileRef = 8713FEFE8A42463FB36F3DA0 /* amplifyconfiguration.json */; };
+		C85ECFFD2654BD8500D5596C /* Presenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85ECFFC2654BD8500D5596C /* Presenter.swift */; };
+		C85ED0012654BD9B00D5596C /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85ED0002654BD9B00D5596C /* DataService.swift */; };
+		C85ED0042654BDA500D5596C /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85ED0032654BDA500D5596C /* Interactor.swift */; };
+		C85ED0202654C0CD00D5596C /* ContentEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85ED01F2654C0CD00D5596C /* ContentEditView.swift */; };
+		C85ED0262654C42600D5596C /* ContentEditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = C85ED0252654C42600D5596C /* ContentEditView.xib */; };
+		C85ED0292654C56D00D5596C /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C85ED0282654C56D00D5596C /* EditViewController.swift */; };
 		E24201702633C5E70050258A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E242016F2633C5E70050258A /* AppDelegate.swift */; };
 		E24201722633C5E70050258A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24201712633C5E70050258A /* SceneDelegate.swift */; };
 		E24201742633C5E70050258A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E24201732633C5E70050258A /* ViewController.swift */; };
@@ -29,7 +35,7 @@
 		E2823263265412EF00B4D385 /* Community.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823257265412EF00B4D385 /* Community.swift */; };
 		E2823264265412EF00B4D385 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823258265412EF00B4D385 /* Pet.swift */; };
 		E2823265265412EF00B4D385 /* UserCommunity.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2823259265412EF00B4D385 /* UserCommunity.swift */; };
-		E2F9936D263712AF00E37EB2 /* UserListEventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9936C263712AF00E37EB2 /* UserListEventHandler.swift */; };
+		E2F9936D263712AF00E37EB2 /* UserListProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2F9936C263712AF00E37EB2 /* UserListProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +46,12 @@
 		54ABB23D2D1E41C2B7BCDF4A /* amplifytools.xcconfig */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 4; includeInIndex = 0; lastKnownFileType = text.xcconfig; path = amplifytools.xcconfig; sourceTree = "<group>"; };
 		8713FEFE8A42463FB36F3DA0 /* amplifyconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = amplifyconfiguration.json; sourceTree = "<group>"; };
 		9EB7D6351189435FB4B340C4 /* awsconfiguration.json */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; path = awsconfiguration.json; sourceTree = "<group>"; };
+		C85ECFFC2654BD8500D5596C /* Presenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Presenter.swift; sourceTree = "<group>"; };
+		C85ED0002654BD9B00D5596C /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		C85ED0032654BDA500D5596C /* Interactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interactor.swift; sourceTree = "<group>"; };
+		C85ED01F2654C0CD00D5596C /* ContentEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentEditView.swift; sourceTree = "<group>"; };
+		C85ED0252654C42600D5596C /* ContentEditView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContentEditView.xib; sourceTree = "<group>"; };
+		C85ED0282654C56D00D5596C /* EditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
 		E242016C2633C5E70050258A /* AWS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AWS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E242016F2633C5E70050258A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E24201712633C5E70050258A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +73,7 @@
 		E2823257265412EF00B4D385 /* Community.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Community.swift; sourceTree = "<group>"; };
 		E2823258265412EF00B4D385 /* Pet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
 		E2823259265412EF00B4D385 /* UserCommunity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCommunity.swift; sourceTree = "<group>"; };
-		E2F9936C263712AF00E37EB2 /* UserListEventHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListEventHandler.swift; sourceTree = "<group>"; };
+		E2F9936C263712AF00E37EB2 /* UserListProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserListProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +117,16 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		C85ED01E2654C0AF00D5596C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E242023C263703C90050258A /* UserListView.swift */,
+				C85ED01F2654C0CD00D5596C /* ContentEditView.swift */,
+				C85ED0252654C42600D5596C /* ContentEditView.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		E24201632633C5E70050258A = {
 			isa = PBXGroup;
 			children = (
@@ -131,6 +153,7 @@
 				E242016F2633C5E70050258A /* AppDelegate.swift */,
 				E24201712633C5E70050258A /* SceneDelegate.swift */,
 				E24201732633C5E70050258A /* ViewController.swift */,
+				C85ED0282654C56D00D5596C /* EditViewController.swift */,
 				E242023A2637036D0050258A /* Viper */,
 				E24201752633C5E70050258A /* Main.storyboard */,
 				E24201782633C5E90050258A /* Assets.xcassets */,
@@ -143,8 +166,11 @@
 		E242023A2637036D0050258A /* Viper */ = {
 			isa = PBXGroup;
 			children = (
-				E242023C263703C90050258A /* UserListView.swift */,
-				E2F9936C263712AF00E37EB2 /* UserListEventHandler.swift */,
+				C85ED01E2654C0AF00D5596C /* Views */,
+				C85ECFFC2654BD8500D5596C /* Presenter.swift */,
+				E2F9936C263712AF00E37EB2 /* UserListProtocol.swift */,
+				C85ED0002654BD9B00D5596C /* DataService.swift */,
+				C85ED0032654BDA500D5596C /* Interactor.swift */,
 			);
 			path = Viper;
 			sourceTree = "<group>";
@@ -229,6 +255,7 @@
 			files = (
 				E242017C2633C5E90050258A /* LaunchScreen.storyboard in Resources */,
 				E24201792633C5E90050258A /* Assets.xcassets in Resources */,
+				C85ED0262654C42600D5596C /* ContentEditView.xib in Resources */,
 				E24201772633C5E70050258A /* Main.storyboard in Resources */,
 				52FFD9002C8042648144A0F7 /* amplifyconfiguration.json in Resources */,
 				2D33E31849034AB0BEC5371B /* awsconfiguration.json in Resources */,
@@ -284,11 +311,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C85ECFFD2654BD8500D5596C /* Presenter.swift in Sources */,
 				E2823263265412EF00B4D385 /* Community.swift in Sources */,
+				C85ED0042654BDA500D5596C /* Interactor.swift in Sources */,
 				E24201742633C5E70050258A /* ViewController.swift in Sources */,
 				E24201702633C5E70050258A /* AppDelegate.swift in Sources */,
 				E282325D265412EF00B4D385 /* UserCommunity+Schema.swift in Sources */,
 				E242024026370C690050258A /* UserListView.swift in Sources */,
+				C85ED0012654BD9B00D5596C /* DataService.swift in Sources */,
 				E2823261265412EF00B4D385 /* Location+Schema.swift in Sources */,
 				E24201722633C5E70050258A /* SceneDelegate.swift in Sources */,
 				E282325E265412EF00B4D385 /* User+Schema.swift in Sources */,
@@ -297,9 +327,11 @@
 				E282325A265412EF00B4D385 /* Location.swift in Sources */,
 				E2823265265412EF00B4D385 /* UserCommunity.swift in Sources */,
 				E2823260265412EF00B4D385 /* User.swift in Sources */,
-				E2F9936D263712AF00E37EB2 /* UserListEventHandler.swift in Sources */,
+				E2F9936D263712AF00E37EB2 /* UserListProtocol.swift in Sources */,
 				E2823264265412EF00B4D385 /* Pet.swift in Sources */,
+				C85ED0202654C0CD00D5596C /* ContentEditView.swift in Sources */,
 				E282325B265412EF00B4D385 /* Gender.swift in Sources */,
+				C85ED0292654C56D00D5596C /* EditViewController.swift in Sources */,
 				E282325F265412EF00B4D385 /* Pet+Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

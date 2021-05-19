@@ -78,6 +78,7 @@ PODS:
     - AWSCore (= 2.21.1)
   - CoreMLPredictionsPlugin (1.5.2):
     - Amplify (= 1.5.2)
+  - LookinServer (1.0.0)
   - SQLite.swift (0.12.2):
     - SQLite.swift/standard (= 0.12.2)
   - SQLite.swift/standard (0.12.2)
@@ -88,6 +89,7 @@ DEPENDENCIES:
   - AmplifyPlugins
   - AWSPredictionsPlugin
   - CoreMLPredictionsPlugin
+  - LookinServer
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -110,6 +112,7 @@ SPEC REPOS:
     - AWSTranscribeStreaming
     - AWSTranslate
     - CoreMLPredictionsPlugin
+    - LookinServer
     - SQLite.swift
     - Starscream
 
@@ -133,9 +136,10 @@ SPEC CHECKSUMS:
   AWSTranscribeStreaming: eed558fef8602878e2423bade9c4a4e6f56e4ea1
   AWSTranslate: bd347fc2d8f7ba8492356fae93e029d80f618cce
   CoreMLPredictionsPlugin: 3157e7b846a44e0df2963fe750f0abaf6cda3763
+  LookinServer: 0002891cd3cec5e082a910e897dfe71b4f06b89e
   SQLite.swift: d2b4642190917051ce6bd1d49aab565fe794eea3
   Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
 
-PODFILE CHECKSUM: a9d0accb98d57dd11a3823d51d32b18f65007c85
+PODFILE CHECKSUM: d5e1d5c43c53a1e7617a81806c9c3de225b9670a
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.10.1

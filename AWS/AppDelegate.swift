@@ -34,6 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tom:User  = User(id: "001", name: "tom", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["King Of City"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
         let jerry:User  = User(id: "002", name: "jerry", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["嘻嘻哈哈"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
         let john:User  = User(id: "003", name: "john", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["吊儿郎当"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
+        let patrick:User  = User(id: "004", name: "patrick", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["吊儿郎当"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
         
         let community:Community = Community(
                 name: "YeahKa",
@@ -50,7 +51,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         }
         Amplify.DataStore.save(jerry)
         Amplify.DataStore.save(john)
-        
+        Amplify.DataStore.save(patrick)
         Amplify.DataStore.save(community) { result in
             switch(result) {
             case .success(let savedItem):
@@ -70,21 +71,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         return true
     }
-
-    // MARK: UISceneSession Lifecycle
-
-    func application(_ application: UIApplication, configurationForConnecting connectingSceneSession: UISceneSession, options: UIScene.ConnectionOptions) -> UISceneConfiguration {
-        // Called when a new scene session is being created.
-        // Use this method to select a configuration to create the new scene with.
-        return UISceneConfiguration(name: "Default Configuration", sessionRole: connectingSceneSession.role)
-    }
-
-    func application(_ application: UIApplication, didDiscardSceneSessions sceneSessions: Set<UISceneSession>) {
-        // Called when the user discards a scene session.
-        // If any sessions were discarded while the application was not running, this will be called shortly after application:didFinishLaunchingWithOptions.
-        // Use this method to release any resources that were specific to the discarded scenes, as they will not return.
-    }
-
+ 
 
 }
 

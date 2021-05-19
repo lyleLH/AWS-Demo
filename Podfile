@@ -12,5 +12,5 @@ target :'AWS' do
     
     pod 'AWSPredictionsPlugin'
     pod 'CoreMLPredictionsPlugin'
-    
+    pod 'LookinServer', :configurations => ['Debug']
 end

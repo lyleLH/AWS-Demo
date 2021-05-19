@@ -22,6 +22,12 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         self.view.addSubview(self.listView);
+        self.navigationItem.title  = "首页"
+        let BtnItem = UIBarButtonItem.init(title: "新增", style: .done, target: self, action: #selector(titleBarButtonItemMethod))
+
+        
+        let naviItem = BtnItem
+        self.navigationItem.rightBarButtonItem = naviItem
         
         Amplify.DataStore.query(User.self) { result in
             switch(result) {
@@ -36,12 +42,16 @@ class ViewController: UIViewController {
             }
             self.listView.tableView.reloadData()
         }
+        
     }
 
-
+    @objc func titleBarButtonItemMethod() {
+        let vc = EditViewController.init()
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 }
 
-extension ViewController :UserListEventHandler {
+extension ViewController :UserListEventProtocol {
     func tableViewCellSelected(indexPath: IndexPath) {
         print(indexPath)
     }
