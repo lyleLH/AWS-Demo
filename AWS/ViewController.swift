@@ -7,10 +7,14 @@
 
 import UIKit
 import Amplify
+import Combine
+ 
  
 
-class ViewController: UIViewController {
 
+class ViewController: UIViewController {
+    var todoSubscription: AnyCancellable?
+    
     lazy var listView:UserListView = {
         let view  = UserListView()
         view.frame = self.view.bounds
@@ -29,6 +33,40 @@ class ViewController: UIViewController {
         let naviItem = BtnItem
         self.navigationItem.rightBarButtonItem = naviItem
         
+//        
+//        self.todoSubscription =  Amplify.DataStore.publisher(for: User.self)
+//            .sink(receiveCompletion: { completion in
+//                           print("Subscription has been completed: \(completion)")
+//                       }, receiveValue: { mutationEvent in
+//                           print("Subscription got this value: \(mutationEvent)")
+//
+//                           do {
+//                             let user = try mutationEvent.decodeModel(as: User.self)
+//
+//                             switch mutationEvent.mutationType {
+//                             case "create":
+//                               print("Created: \(user)")
+//                             case "update":
+//                               print("Updated: \(user)")
+//                             case "delete":
+//                               print("Deleted: \(user)")
+//                             default:
+//                               break
+//                             }
+//
+//                           } catch {
+//                             print("Model could not be decoded: \(error)")
+//                           }
+//                       })
+//        
+        reloadDatasource()
+    
+    }
+
+    func reloadDatasource()  {
+        self.listView.dataSource.removeAll()
+     
+        
         Amplify.DataStore.query(User.self) { result in
             switch(result) {
             case .success(let items):
@@ -44,10 +82,13 @@ class ViewController: UIViewController {
         }
         
     }
-
+    
     @objc func titleBarButtonItemMethod() {
-        let vc = EditViewController.init()
-        self.navigationController?.pushViewController(vc, animated: true)
+        DataService().saveRandomUserData()
+        
+        reloadDatasource()
+//        let vc = EditViewController.init()
+//        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 

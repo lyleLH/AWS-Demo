@@ -17,13 +17,16 @@ import AmplifyPlugins
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func initializeAmplify() {
+        let models = AmplifyModels()
+        let apiPlugin = AWSAPIPlugin(modelRegistration: models)
+        let dataStorePlugin = AWSDataStorePlugin(modelRegistration: models)
         do {
-            try Amplify.add(plugin: AWSDataStorePlugin(modelRegistration: AmplifyModels()))
+            try Amplify.add(plugin: apiPlugin)
+            try Amplify.add(plugin: dataStorePlugin)
             try Amplify.configure()
-    
-            // and so on ...
+            print("Initialized Amplify");
         } catch {
-            assert(false, "Error initializing Amplify: \(error)")
+            assert(false, "Could not initialize Amplify: \(error)")
         }
     }
 
@@ -31,43 +34,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         initializeAmplify()
         
-        let tom:User  = User(id: "001", name: "tom", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["King Of City"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
-        let jerry:User  = User(id: "002", name: "jerry", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["嘻嘻哈哈"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
-        let john:User  = User(id: "003", name: "john", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["吊儿郎当"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
-        let patrick:User  = User(id: "004", name: "patrick", catchPhrase: "123", creationDate:Temporal.DateTime.now() , age: 29, weight: 75, nicknames:["吊儿郎当"], gender: Gender.male, location: nil, Pets: [Pet.init(id: "001", name: "Hummer", userID: "001")], Communities: []);
         
-        let community:Community = Community(
-                name: "YeahKa",
-            users:[])
-        let usercmt:UserCommunity = UserCommunity(user: tom, community: community)
-       
-        Amplify.DataStore.save(tom) { result in
-            switch(result) {
-            case .success(let savedItem):
-                print("Saved item: \(savedItem.id)")
-            case .failure(let error):
-                print("Could not save item to DataStore: \(error)")
-            }
-        }
-        Amplify.DataStore.save(jerry)
-        Amplify.DataStore.save(john)
-        Amplify.DataStore.save(patrick)
-        Amplify.DataStore.save(community) { result in
-            switch(result) {
-            case .success(let savedItem):
-                print("Saved item: \(savedItem.id)")
-            case .failure(let error):
-                print("Could not save item to DataStore: \(error)")
-            }
-        }
-        Amplify.DataStore.save(usercmt) { result in
-            switch(result) {
-            case .success(let savedItem):
-                print("Saved item: \(savedItem.id)")
-            case .failure(let error):
-                print("Could not save item to DataStore: \(error)")
-            }
-        }
         
         return true
     }

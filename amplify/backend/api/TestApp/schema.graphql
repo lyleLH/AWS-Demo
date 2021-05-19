@@ -1,0 +1,44 @@
+type Community @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  users: [UserCommunity] @connection(keyName: "byCommunity", fields: ["id"])
+}
+
+type Pet @model @auth(rules: [{allow: public}]) @key(name: "byUser", fields: ["userID"]) {
+  id: ID!
+  name: String
+  userID: ID
+}
+
+type Location {
+  latitude: String
+  longtitude: String
+}
+
+enum Gender {
+  FEMALE
+  MALE
+  OTHER
+}
+
+type User @model @auth(rules: [{allow: public}]) {
+  id: ID!
+  name: String
+  catchPhrase: String
+  creationDate: AWSDateTime
+  age: Int
+  weight: Float
+  nicknames: [String]
+  gender: Gender
+  location: Location
+  Pets: [Pet] @connection(keyName: "byUser", fields: ["id"])
+  Communities: [UserCommunity] @connection(keyName: "byUser", fields: ["id"])
+}
+
+type UserCommunity @model(queries: null) @key(name: "byUser", fields: ["userID", "communityID"]) @key(name: "byCommunity", fields: ["communityID", "userID"]) @auth(rules: [{allow: public}, {allow: public}]) {
+  id: ID!
+  userID: ID!
+  communityID: ID!
+  user: User! @connection(fields: ["userID"])
+  community: Community! @connection(fields: ["communityID"])
+}
